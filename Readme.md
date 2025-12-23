@@ -12,6 +12,7 @@ This lab teaches you how to exploit SQL injection vulnerabilities in a web appli
 
 ### 1. Install Requirements
 ```bash
+# Have a complete Lab Setup, Visit https://seedsecuritylabs.org/
 # Install Docker & Docker Compose
 sudo apt update
 sudo apt install -y docker.io docker-compose mysql-client
@@ -22,7 +23,7 @@ sudo reboot
 ```
 
 ### 2. Download and Extract Lab Files
-- Download `Labsetup.zip` from https://seedsecuritylabs.org/
+- (Optional) Download `Labsetup.zip` from https://seedsecuritylabs.org/
 - Extract and navigate to folder:
 ```bash
 unzip Labsetup.zip
