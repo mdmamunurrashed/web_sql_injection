@@ -27,15 +27,33 @@ sudo nano /etc/hosts
 10.9.0.5 www.seed-server.com
 ```
 
-### 3. Start Containers
+### 3. Fix Container Conflicts (if needed)
 ```bash
-docker-compose up
+docker-compose down
+docker rm -f mysql-10.9.0.6
+
+# or
+
+docker-compose down
+docker rm -f PUT_CONTAINER_ID_HERE
 ```
 
-### 4. Verify
-Open browser: `http://www.seed-server.com`
----
+### 4. Start Containers
+```bash
+docker-compose up -d
 
+# or
+
+dcup
+```
+
+### 5. Check Containers Running
+```bash
+docker ps
+```
+
+### 6. Open Website to Verify
+Open browser: `http://www.seed-server.com`
 ![HomePage](images/home.png)
 
 ## Task 1: Get Familiar with SQL
